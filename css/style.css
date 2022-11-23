@@ -407,6 +407,7 @@ footer {
     }
 
     .parrafo2 a{
+        font-size: 20px;
         color: black;
         margin: 15px 0px 10uypx 0px;
         background-color: #f1ddbf;
@@ -434,12 +435,58 @@ footer {
         
     }
 
+    header a {
+        border-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
     header a img {
         width: 35px;
         height: 35px;
     }
 }
 
+.h2Titulo h2 {
+    font-size: 30px;
+}
+
+.parrafo1 {
+    margin: 10px 0 5px 0;
+}
+
+.parrafo2 {
+    margin: 10px 0 10px 0;
+}
+
+.parrafo1 a {
+    margin: 0;
+}
+
+.parrafo2 a {
+    margin: 0;
+}
+
+.copy {
+    text-align: center;
+}
+
+@media screen and (max-width:455px) {
+    .mundomandala h1 {
+        font-size: 45px;
+    }
+
+    .mundomandala div p {
+        font-size: 30px;
+        border-radius: 45%;
+        background-color: #f1ddbf;
+        color: black;
+    }
+
+    .h2Titulo h2 {
+        font-size: 20px;
+    }
+}
 
 
 /*
