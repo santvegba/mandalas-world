@@ -32,6 +32,11 @@ header a h2 {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    transition: 0.5s;
+}
+
+header a h2:hover {
+    color: rgba(88, 45, 207, 0.699);
 }
 
 header a img {
@@ -50,6 +55,11 @@ header nav ul a {
     color: rgba(0, 0, 0, 0.781);
     background-color: rgba(54, 10, 83, 0);
     font-weight: bold;
+    transition: 0.5s;
+}
+
+header nav ul a:hover{
+    color: rgba(88, 45, 207, 0.699);
 }
 
 header nav ul li {
@@ -136,6 +146,12 @@ header nav ul li {
     border-radius: 50px;
     margin: 60px 0px 0px 0px;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.parrafo1 a:hover{
+    color: #e79110e5;
+    transform: scale(1.05);
 }
 
 .parrafo2 {
@@ -146,6 +162,7 @@ header nav ul li {
     width: 40%;
     text-align: right;
     margin: 0px 20px 0px 0px;
+    transition: 0.5;
 }
 
 .parrafo2 a{
@@ -156,8 +173,13 @@ header nav ul li {
     border-radius: 50px;
     margin: 60px 0px 0px 0px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
+.parrafo2 a:hover {
+    color: #e79110e5;
+    transform: scale(1.05);
+}
 
 .presentacion div img {
     width: 420px;
@@ -228,6 +250,12 @@ section form {
     border-color:rgba(54, 10, 83, 0.76);
     border-width: 5px;
     height: 310px;
+    transition: 2s ease-in-out;
+}
+
+.grid-contenido div:hover {
+    transform: scale(1.05);
+    border-color: #e79110e5;
 }
 
 .grid-contenido div img{
@@ -281,6 +309,11 @@ footer {
 .navRedes .redes-cont div a {
     color: rgba(88, 45, 207, 0.842);
     margin: 20px;
+    transition: 0.5s;
+}
+
+.navRedes .redes-cont div a:hover {
+    color: #e79110e5;
 }
 
 .copy {
