@@ -48,6 +48,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 header nav ul a {
@@ -118,6 +119,7 @@ header nav ul li {
     background-color: #e79110e5;
     font-size: 60px;
     text-align: center; 
+    margin: 0;
 }
 
 
@@ -188,33 +190,52 @@ header nav ul li {
     border-color:  rgba(54, 10, 83, 0.904);
 }
 
-section article {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: antiquewhite;
-    background-color: rgba(54, 10, 83, 0.76);
+.accordion-item {
+    background-color: rgba(88, 45, 207, 0.842);
 }
 
-section form {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: antiquewhite;
-    background-color: rgba(54, 10, 83, 0.76);
+.accordion-button{
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(88, 45, 207, 0.842);
+    font-size: 30px;
+    background-color: antiquewhite;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(88, 45, 207, 0.842) ;
+    background-color: #fac26fe5;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+    border-color: rgba(88, 45, 207, 0.842);
+
+}
+
+
+.accordion-body {
+    font-family: 'Shalimar', cursive;
+    font-size: 40px;
+    color: #ffe7c4;
+}
+
+.carrusel-section {
+    background-color: antiquewhite;
 }
 
 .carrusel {
-    height: 300px;
-    background-color: #fac26fe5;
+    padding: 10px;
+    margin: auto;
+    height: 400px;
+    width: 390px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carrusel img {
-    width: 250px;
-    height: 250px;
-    margin: 50px;
-    border-radius: 150px;
+.carousel-item img {
+    width: 400px;
+    height: 390px;
 }
 
 .galeria-titulo h2{
@@ -321,14 +342,26 @@ footer {
     background-color: black;
     font-family: 'Reenie Beanie', cursive;
     font-size: 20px;
+    margin: 0;
 }
 
+.copy p {
+    margin: 0;
+}
 
 
 /************************************************** MEDIA QUERYS ************************************************************/
 @media screen and (max-width:1180px) {
     .mundomandala h1 {
         font-size: 75px;
+    }
+
+    .parrafo1 a{
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .parrafo2 a{
+        margin: 20px 0px 0px 0px;
     }
 }
 
@@ -347,11 +380,11 @@ footer {
 }
 
 .parrafo1 a{
-    margin: 50px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .parrafo2 a{
-    margin: 50px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 }
 
@@ -393,11 +426,6 @@ footer {
     .mundomandala div p {
         font-size: 40px;
         color: #e79110e5;
-    }
-
-    .carrusel img {
-        width: 200px;
-        height: 200px;
     }
 
     .mundomandala div{
@@ -464,14 +492,15 @@ footer {
 } 
 
 @media screen and (max-width:795px) {
-        .carrusel {
-        flex-direction: column;
-        height: auto;
-    } 
 
-.carrusel img {
-    margin: 10px;
-}
+    .carrusel {
+        width: 450px;
+    }
+
+    .carousel-item img {
+        width:auto ;
+        height: auto;
+    }
 
     .footerCarta h4 {
         margin: 15px 0px 5px 0px;
@@ -539,6 +568,10 @@ footer {
 @media screen and (max-width:500px) {
     .grid-contenido{
         grid-template-columns: 1fr
+    }
+
+    .carrusel {
+        width: 300px;
     }
 }
 
