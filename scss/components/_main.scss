@@ -1,0 +1,116 @@
+main {
+    .mundomandala {
+        display: flex;
+        justify-content: space-between;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            background-color: #fac26fe5;
+            h1 {
+                font-family: 'Kaushan Script', cursive;
+                color: rgba(88, 45, 207, 0.966); 
+                font-size: 85px;
+                font-weight: bolder;
+            }
+            p {
+                font-family: 'Shalimar', cursive;
+                font-size: 50px;
+                font-weight: bolder;
+                color: rgba(88, 45, 207, 0.842);
+            }
+        }
+        img {
+            width: 50%;
+            height: 323px;
+        }
+    }
+    .h2Titulo {
+        h2 {
+            font-family: 'Kaushan Script', cursive;
+            color: #f1ddbf;
+            background-color: #e79110e5;
+            font-size: 60px;
+            text-align: center; 
+            margin: 0;
+        }
+    }
+    .presentacion {
+        height: calc(100vh - 97px);
+        background-image: url(../assets/img/mandalas/section2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        #parrafos {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .parrafo1 {
+                font-family: 'Reenie Beanie', cursive;
+                font-size: 40px;
+                font-weight: bold;
+                color: #ffe7c4;
+                width: 40%;
+                text-align: left;
+                margin: 0px 0px 0px 8px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    color: #ffe7c4;
+                    background-color: #000000c2;
+                    border-radius: 50px;
+                    margin: 60px 0px 0px 0px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover {
+                        color: #e79110e5;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .parrafo2 {
+                font-family: 'Reenie Beanie', cursive;
+                font-size: 40px;
+                font-weight: bold;
+                color: #ffe7c4;
+                width: 40%;
+                text-align: right;
+                margin: 0px 20px 0px 0px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    color: #ffe7c4;
+                    background-color: #000000c2;
+                    border-radius: 50px;
+                    margin: 60px 0px 0px 0px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover {
+                        color: #e79110e5;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+
+    .carrusel-section {
+        background-color: antiquewhite;
+        .carrusel {
+            padding: 10px;
+            margin: auto;
+            height: 400px;
+            width: 390px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .carrusel-item{
+                width: 400px;
+                height: 390px;
+            }
+        }
+    }
+}
