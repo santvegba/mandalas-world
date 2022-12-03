@@ -149,6 +149,46 @@ main .carrusel-section {
       width: 400px;
       height: 390px; }
 
+main .galeria-titulo div h2 {
+  font-family: 'Kaushan Script', cursive;
+  color: #f1ddbf;
+  background-color: #e79110e5;
+  font-size: 50px;
+  text-align: center; }
+
+main .galeria-titulo p {
+  font-size: 50px;
+  font-family: 'Kaushan Script', cursive;
+  color: #f1ddbf;
+  background-color: #e79110e5;
+  font-size: 50px;
+  text-align: center; }
+
+main .grid-contenido {
+  width: 100%;
+  padding: 40px;
+  gap: 15px;
+  background-color: #f1ddbf;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  main .grid-contenido div {
+    border-style: groove;
+    border-color: rgba(54, 10, 83, 0.76);
+    border-width: 5px;
+    height: 310px;
+    transition: 2s ease-in-out; }
+    main .grid-contenido div:hover {
+      transform: scale(1.05);
+      border-color: #e79110e5; }
+    main .grid-contenido div img {
+      width: 100%;
+      height: 300px; }
+  main .grid-contenido .imgGrid-2 {
+    grid-column: 2/4; }
+  main .grid-contenido .imgGrid-9 {
+    grid-column: 2/4; }
+
 footer {
   background-color: #fac26fe5;
   width: auto; }

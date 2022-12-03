@@ -113,4 +113,55 @@ main {
             }
         }
     }
+
+.galeria-titulo {
+    div {
+        h2 {
+            font-family: 'Kaushan Script', cursive;
+            color: #f1ddbf;
+            background-color: #e79110e5;
+            font-size: 50px;
+            text-align: center; 
+        }
+    }
+    p {
+        font-size: 50px;
+        font-family: 'Kaushan Script', cursive;
+        color: #f1ddbf;
+        background-color: #e79110e5;
+        font-size: 50px;
+        text-align: center; 
+    }
+}
+
+    .grid-contenido {
+        width: 100%;
+        padding: 40px;
+        gap: 15px;
+        background-color: #f1ddbf;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        div {
+            border-style: groove;
+            border-color:rgba(54, 10, 83, 0.76);
+            border-width: 5px;
+            height: 310px;
+            transition: 2s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                border-color: #e79110e5;
+            }
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .imgGrid-2 {
+            grid-column: 2/4;
+        }
+        .imgGrid-9 {
+            grid-column: 2/4;
+        }
+    }
 }
