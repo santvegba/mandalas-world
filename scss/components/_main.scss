@@ -148,6 +148,7 @@ main {
             border-width: 5px;
             height: 310px;
             transition: 2s ease-in-out;
+            z-index: 10;
             &:hover {
                 transform: scale(1.05);
                 border-color: #e79110e5;
@@ -166,10 +167,25 @@ main {
     }
 }
 
-.section {
-    .accordion {
-        .accordion-item {
-            background-color: rgba(88, 45, 207, 0.842);
+main section .accordion {
+    .accordion-item {
+        background-color: rgba(88, 45, 207, 0.842);
+        .accordion-button {
+            font-family: 'Kaushan Script', cursive;
+            color: rgba(88, 45, 207, 0.842);
+            font-size: 30px;
+            background-color: antiquewhite;
+            box-shadow: none;
+            &:not(.collapsed) {
+                color: rgba(88, 45, 207, 0.842) ;
+                background-color: #fac26fe5;
+                box-shadow: none;
+            }
+        }
+        .accordion-body {
+            font-family: 'Shalimar', cursive;
+            font-size: 40px;
+            color: #ffe7c4;
         }
     }
 }
