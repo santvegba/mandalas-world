@@ -189,6 +189,9 @@ main .grid-contenido {
   main .grid-contenido .imgGrid-9 {
     grid-column: 2/4; }
 
+.section .accordion .accordion-item {
+  background-color: rgba(88, 45, 207, 0.842); }
+
 footer {
   background-color: #fac26fe5;
   width: auto; }
