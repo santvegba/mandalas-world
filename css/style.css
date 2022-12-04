@@ -201,9 +201,7 @@ header nav ul li {
 
 .accordion-button:focus {
     border-color: rgba(88, 45, 207, 0.842);
-
 }
-
 
 .accordion-body {
     font-family: 'Shalimar', cursive;
