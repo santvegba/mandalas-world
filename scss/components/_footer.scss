@@ -1,5 +1,5 @@
 footer {
-    background-color: #fac26fe5;
+    background-color: $color1;
     width: auto;
     .divTest {
         width: auto;
@@ -12,7 +12,7 @@ footer {
                 text-align: center;
                 font-family: 'Kaushan Script', cursive;
                 font-size: 25px;
-                color: rgba(88, 45, 207, 0.966);
+                color: $color4;
                 margin: 50px 0px 5px 0px;
             }
         }
@@ -24,11 +24,11 @@ footer {
     margin: 10px 0px 30px 0px;
                 div {
                     a {
-                        color: rgba(88, 45, 207, 0.842);
+                        color: $color4;
                         margin: 20px;
                         transition: 0.5s;
                         &:hover {
-                            color: #e79110e5;
+                            color: $color3;
                         }
                     }
                 }
@@ -36,8 +36,8 @@ footer {
         }
     }
     .copy {
-        color: aliceblue;
-        background-color: black;
+        color: $colorwhite;
+        background-color: $colorblack;
         font-family: 'Reenie Beanie', cursive;
         font-size: 20px;
         margin: 0;

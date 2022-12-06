@@ -8,10 +8,10 @@ main {
             align-items: center;
             justify-content: center;
             width: 50%;
-            background-color: #fac26fe5;
+            background-color: $color1;
             h1 {
                 font-family: 'Kaushan Script', cursive;
-                color: rgba(88, 45, 207, 0.966); 
+                color: $color4; 
                 font-size: 85px;
                 font-weight: bolder;
                 margin-bottom: 0;
@@ -22,7 +22,7 @@ main {
                 font-family: 'Shalimar', cursive;
                 font-size: 50px;
                 font-weight: bolder;
-                color: rgba(88, 45, 207, 0.842);
+                color: $color4;
                 margin-bottom: 0;
                 margin-block-start: 0;
                 margin-block-end: 0;
@@ -37,7 +37,7 @@ main {
         h2 {
             font-family: 'Kaushan Script', cursive;
             color: #f1ddbf;
-            background-color: #e79110e5;
+            background-color: $color3;
             font-size: 60px;
             text-align: center; 
             margin: 0;
@@ -58,7 +58,7 @@ main {
                 font-family: 'Reenie Beanie', cursive;
                 font-size: 40px;
                 font-weight: bold;
-                color: #ffe7c4;
+                color: $color2;
                 width: 40%;
                 text-align: left;
                 margin: 0px 0px 0px 8px;
@@ -68,14 +68,14 @@ main {
                 a {
                     display: flex;
                     justify-content: center;
-                    color: #ffe7c4;
-                    background-color: #000000c2;
+                    color: $color2;
+                    background-color: $color6;
                     border-radius: 50px;
                     margin: 60px 0px 0px 0px;
                     text-decoration: none;
                     transition: 0.5s;
                     &:hover {
-                        color: #e79110e5;
+                        color: $color3;
                         transform: scale(1.05);
                     }
                 }
@@ -84,7 +84,7 @@ main {
                 font-family: 'Reenie Beanie', cursive;
                 font-size: 40px;
                 font-weight: bold;
-                color: #ffe7c4;
+                color: $color2;
                 width: 40%;
                 text-align: right;
                 margin: 0px 20px 0px 0px;
@@ -94,14 +94,14 @@ main {
                 a {
                     display: flex;
                     justify-content: center;
-                    color: #ffe7c4;
-                    background-color: #000000c2;
+                    color: $color2;
+                    background-color: $color6;
                     border-radius: 50px;
                     margin: 60px 0px 0px 0px;
                     text-decoration: none;
                     transition: 0.5s;
                     &:hover {
-                        color: #e79110e5;
+                        color: $color3;
                         transform: scale(1.05);
                     }
                 }
@@ -110,7 +110,7 @@ main {
     }
 
     .carrusel-section {
-        background-color: antiquewhite;
+        background-color: $color2;
         .carrusel {
             padding: 10px;
             margin: auto;
@@ -130,8 +130,8 @@ main {
     div {
         h2 {
             font-family: 'Kaushan Script', cursive;
-            color: #f1ddbf;
-            background-color: #e79110e5;
+            color: $color2;
+            background-color: $color3;
             font-size: 50px;
             text-align: center; 
         }
@@ -139,8 +139,8 @@ main {
     p {
         font-size: 50px;
         font-family: 'Kaushan Script', cursive;
-        color: #f1ddbf;
-        background-color: #e79110e5;
+        color: $color2;
+        background-color: $color3;
         font-size: 50px;
         text-align: center; 
     }
@@ -150,20 +150,20 @@ main {
         width: 100%;
         padding: 40px;
         gap: 15px;
-        background-color: #f1ddbf;
+        background-color: $color2;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(3,1fr);
         div {
             border-style: groove;
-            border-color:rgba(54, 10, 83, 0.76);
+            border-color: $color5;
             border-width: 5px;
             height: 310px;
             transition: 2s ease-in-out;
             z-index: 10;
             &:hover {
                 transform: scale(1.05);
-                border-color: #e79110e5;
+                border-color: $color3;
             }
             img {
                 width: 100%;
@@ -186,18 +186,18 @@ main section .accordion {
             font-family: 'Kaushan Script', cursive;
             color: rgba(88, 45, 207, 0.842);
             font-size: 30px;
-            background-color: antiquewhite;
+            background-color: $color1;
             box-shadow: none;
             &:not(.collapsed) {
                 color: rgba(88, 45, 207, 0.842) ;
-                background-color: #fac26fe5;
+                background-color: $color3 ;
                 box-shadow: none;
             }
         }
         .accordion-body {
             font-family: 'Shalimar', cursive;
             font-size: 40px;
-            color: #ffe7c4;
+            color: $color2;
         }
     }
 }

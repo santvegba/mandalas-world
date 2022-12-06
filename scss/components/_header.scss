@@ -1,5 +1,5 @@
 header {
-    background-color: #f1ddbfe3;
+    background-color: $color0;
     position: sticky;
     top: 0;
     display: flex;
@@ -25,12 +25,11 @@ header {
                 margin: 0px 20px 0px 20px;
                 a {
                     text-decoration: none;
-                    color: rgba(0, 0, 0, 0.781);
-                    background-color: rgba(54, 10, 83, 0);
+                    color: $colorblack;
                     font-weight: bold;
                     transition: 0.5s;
                     &:hover {
-                        color: rgba(88, 45, 207, 0.699);
+                        color: $color4;
                     }
                 }
             }
@@ -49,14 +48,14 @@ header {
             height: 65px;
         }
         h2 {
-            color: rgba(0, 0, 0, 0.699);
+            color: $color6;
             font-family: 'Kaushan Script', cursive;
             font-size: 25px;
             font-weight: bold;
             text-align: center;
             margin-bottom: 0;
             transition: 0.5s;
-            & {
+            &:hover {
                 color: rgba(88, 45, 207, 0.699);
             }
         }

@@ -140,7 +140,7 @@
   body main .h2Titulo h2 {
     font-size: 20px; }
   body main .galeria-titulo p {
-    font-size: 20px; } }
+    font-size: 15px; } }
 
 header {
   background-color: #f1ddbfe3;
@@ -167,12 +167,11 @@ header {
     margin: 0px 20px 0px 20px; }
     header nav li a {
       text-decoration: none;
-      color: rgba(0, 0, 0, 0.781);
-      background-color: rgba(54, 10, 83, 0);
+      color: black;
       font-weight: bold;
       transition: 0.5s; }
       header nav li a:hover {
-        color: rgba(88, 45, 207, 0.699); }
+        color: rgba(88, 45, 207, 0.966); }
   header a {
     text-decoration: none;
     border-style: solid;
@@ -186,14 +185,14 @@ header {
       width: 65px;
       height: 65px; }
     header a h2 {
-      color: rgba(0, 0, 0, 0.699);
+      color: #000000c2;
       font-family: 'Kaushan Script', cursive;
       font-size: 25px;
       font-weight: bold;
       text-align: center;
       margin-bottom: 0;
       transition: 0.5s; }
-      header a h2 {
+      header a h2:hover {
         color: rgba(88, 45, 207, 0.699); }
 
 main .mundomandala {
@@ -218,7 +217,7 @@ main .mundomandala {
       font-family: 'Shalimar', cursive;
       font-size: 50px;
       font-weight: bolder;
-      color: rgba(88, 45, 207, 0.842);
+      color: rgba(88, 45, 207, 0.966);
       margin-bottom: 0;
       margin-block-start: 0;
       margin-block-end: 0; }
@@ -291,7 +290,7 @@ main .presentacion {
           transform: scale(1.05); }
 
 main .carrusel-section {
-  background-color: antiquewhite; }
+  background-color: #ffe7c4; }
   main .carrusel-section .carrusel {
     padding: 10px;
     margin: auto;
@@ -306,7 +305,7 @@ main .carrusel-section {
 
 main .galeria-titulo div h2 {
   font-family: 'Kaushan Script', cursive;
-  color: #f1ddbf;
+  color: #ffe7c4;
   background-color: #e79110e5;
   font-size: 50px;
   text-align: center; }
@@ -314,7 +313,7 @@ main .galeria-titulo div h2 {
 main .galeria-titulo p {
   font-size: 50px;
   font-family: 'Kaushan Script', cursive;
-  color: #f1ddbf;
+  color: #ffe7c4;
   background-color: #e79110e5;
   font-size: 50px;
   text-align: center; }
@@ -323,7 +322,7 @@ main .grid-contenido {
   width: 100%;
   padding: 40px;
   gap: 15px;
-  background-color: #f1ddbf;
+  background-color: #ffe7c4;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr); }
@@ -351,11 +350,11 @@ main section .accordion .accordion-item {
     font-family: 'Kaushan Script', cursive;
     color: rgba(88, 45, 207, 0.842);
     font-size: 30px;
-    background-color: antiquewhite;
+    background-color: #fac26fe5;
     box-shadow: none; }
     main section .accordion .accordion-item .accordion-button:not(.collapsed) {
       color: rgba(88, 45, 207, 0.842);
-      background-color: #fac26fe5;
+      background-color: #e79110e5;
       box-shadow: none; }
   main section .accordion .accordion-item .accordion-body {
     font-family: 'Shalimar', cursive;
@@ -383,13 +382,13 @@ footer {
       flex-direction: row;
       margin: 10px 0px 30px 0px; }
       footer .divTest .navRedes .redes-cont div a {
-        color: rgba(88, 45, 207, 0.842);
+        color: rgba(88, 45, 207, 0.966);
         margin: 20px;
         transition: 0.5s; }
         footer .divTest .navRedes .redes-cont div a:hover {
           color: #e79110e5; }
   footer .copy {
-    color: aliceblue;
+    color: white;
     background-color: black;
     font-family: 'Reenie Beanie', cursive;
     font-size: 20px;
