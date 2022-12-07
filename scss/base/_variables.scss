@@ -4,6 +4,50 @@ $color0: #f1ddbfe3;
 $color1: #fac26fe5 ;
 $color2: #ffe7c4 ;
 $color3: #e79110e5 ;
-$color4: rgba(88, 45, 207, 0.966) ;
-$color5: rgba(54, 10, 83, 0.76) ;
-$color6: #000000c2 ;
+
+
+//********** LISTAS **********//
+$fuente: 
+'Kaushan Script', cursive,
+'Shalimar', cursive,
+'Reenie Beanie', cursive
+;
+
+
+
+
+//********** MAPAS **********//
+
+$grid-maps:(
+    ancho: 100%,
+    alto-div: 310px,
+    alto-img:300px,
+    padd: 40px,
+    gap: 15px,
+    transicion: scale(1.05),
+    duracion: 2s,
+    );
+
+//********** EXTENDS **********//
+
+    %flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+};
+
+//********** MIXINS **********//
+
+@mixin flex ($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+};
+
+@mixin grids ($grid, $column, $rows){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+}

@@ -1,17 +1,13 @@
 main {
     .mundomandala {
-        display: flex;
-        justify-content: space-between;
+        @include flex (flex, space-between, none, none);
         div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include flex (flex, center, center, column);
             width: 50%;
             background-color: $color1;
             h1 {
-                font-family: 'Kaushan Script', cursive;
-                color: $color4; 
+                font-family: nth($fuente, 1);
+                color: rgba(88, 45, 207, 0.966); 
                 font-size: 85px;
                 font-weight: bolder;
                 margin-bottom: 0;
@@ -19,10 +15,10 @@ main {
                 margin-block-end: 0;
             }
             p {
-                font-family: 'Shalimar', cursive;
+                font-family: nth($fuente, 3);
                 font-size: 50px;
                 font-weight: bolder;
-                color: $color4;
+                color: rgba(88, 45, 207, 0.966);
                 margin-bottom: 0;
                 margin-block-start: 0;
                 margin-block-end: 0;
@@ -35,7 +31,7 @@ main {
     }
     .h2Titulo {
         h2 {
-            font-family: 'Kaushan Script', cursive;
+            font-family: nth($fuente, 1);
             color: #f1ddbf;
             background-color: $color3;
             font-size: 60px;
@@ -51,11 +47,9 @@ main {
         background-position: center;
         #parrafos {
             height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex (flex, space-between, center, row);
             .parrafo1 {
-                font-family: 'Reenie Beanie', cursive;
+                font-family: nth($fuente, 3);
                 font-size: 40px;
                 font-weight: bold;
                 color: $color2;
@@ -66,22 +60,21 @@ main {
                     margin-bottom: 0;
                 }
                 a {
-                    display: flex;
-                    justify-content: center;
+                    @include flex (flex, center, none, none);
                     color: $color2;
-                    background-color: $color6;
+                    background-color: #000000c2;
                     border-radius: 50px;
                     margin: 60px 0px 0px 0px;
                     text-decoration: none;
                     transition: 0.5s;
                     &:hover {
                         color: $color3;
-                        transform: scale(1.05);
+                        transform: map-get($grid-maps, transicion);
                     }
                 }
             }
             .parrafo2 {
-                font-family: 'Reenie Beanie', cursive;
+                font-family: nth($fuente, 3);
                 font-size: 40px;
                 font-weight: bold;
                 color: $color2;
@@ -92,17 +85,16 @@ main {
                     margin-bottom: 0;
                 }
                 a {
-                    display: flex;
-                    justify-content: center;
+                    @include flex (flex, center, none, none);
                     color: $color2;
-                    background-color: $color6;
+                    background-color: #000000c2;
                     border-radius: 50px;
                     margin: 60px 0px 0px 0px;
                     text-decoration: none;
                     transition: 0.5s;
                     &:hover {
                         color: $color3;
-                        transform: scale(1.05);
+                        transform: map-get($grid-maps, transicion);
                     }
                 }
             }
@@ -114,11 +106,9 @@ main {
         .carrusel {
             padding: 10px;
             margin: auto;
-            height: 400px;
+            height: 500px;
             width: 390px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center, column);
             .carrusel-item{
                 width: 400px;
                 height: 390px;
@@ -129,7 +119,7 @@ main {
 .galeria-titulo {
     div {
         h2 {
-            font-family: 'Kaushan Script', cursive;
+            font-family: nth($fuente, 1);
             color: $color2;
             background-color: $color3;
             font-size: 50px;
@@ -138,7 +128,7 @@ main {
     }
     p {
         font-size: 50px;
-        font-family: 'Kaushan Script', cursive;
+        font-family: nth($fuente, 1);
         color: $color2;
         background-color: $color3;
         font-size: 50px;
@@ -147,27 +137,26 @@ main {
 }
 
     .grid-contenido {
-        width: 100%;
-        padding: 40px;
-        gap: 15px;
+        width: map-get($grid-maps, ancho);
+        padding: map-get($grid-maps, padd);
+        gap: map-get($grid-maps, gap);
         background-color: $color2;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,1fr);
+        @include grids (grid, repeat(4,1fr), repeat(3,1fr));
         div {
             border-style: groove;
-            border-color: $color5;
+            border-color: rgba(54, 10, 83, 0.76);
             border-width: 5px;
-            height: 310px;
-            transition: 2s ease-in-out;
+            height: map-get($grid-maps, alto-div);
+            transition-property: map-get($grid-maps, transition) ;
+            transition-duration: map-get($grid-maps, duracion);
             z-index: 10;
             &:hover {
-                transform: scale(1.05);
+                transform: map-get($grid-maps, transicion);
                 border-color: $color3;
             }
             img {
-                width: 100%;
-                height: 300px;
+                width: map-get($grid-maps, ancho);
+                height: map-get($grid-maps, alto-img);
             }
         }
         .imgGrid-2 {
@@ -183,7 +172,7 @@ main section .accordion {
     .accordion-item {
         background-color: rgba(88, 45, 207, 0.842);
         .accordion-button {
-            font-family: 'Kaushan Script', cursive;
+            font-family: nth($fuente, 1);
             color: rgba(88, 45, 207, 0.842);
             font-size: 30px;
             background-color: $color1;
@@ -195,7 +184,7 @@ main section .accordion {
             }
         }
         .accordion-body {
-            font-family: 'Shalimar', cursive;
+            font-family: nth($fuente, 3);
             font-size: 40px;
             color: $color2;
         }

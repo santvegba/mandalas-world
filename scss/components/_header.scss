@@ -2,15 +2,11 @@ header {
     background-color: $color0;
     position: sticky;
     top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center, row);
     z-index: 12;
     nav {
         ul {
-            display: flex;
-            justify-content: center;
+            @include flex (flex, center, none, none);
             list-style: none;
             padding: 0;
             margin-bottom: 0;
@@ -20,7 +16,7 @@ header {
         }
             li {
                 margin: 0px 10px 0px 10px;
-                font-family: 'Kaushan Script', cursive;
+                font-family: nth($fuente, 1);
                 font-size: 25px;
                 margin: 0px 20px 0px 20px;
                 a {
@@ -29,7 +25,7 @@ header {
                     font-weight: bold;
                     transition: 0.5s;
                     &:hover {
-                        color: $color4;
+                        color: rgba(88, 45, 207, 0.966);
                     }
                 }
             }
@@ -41,15 +37,14 @@ header {
         border-color: rgba(88, 45, 207, 0.699);
         padding: 7px;
         margin: 5px;
-        display: flex;
-        align-items: center;
+        @include flex (flex, none, center, none);
         img {
             width: 65px;
             height: 65px;
         }
         h2 {
-            color: $color6;
-            font-family: 'Kaushan Script', cursive;
+            color: #000000c2;
+            font-family: nth($fuente, 1);
             font-size: 25px;
             font-weight: bold;
             text-align: center;

@@ -3,28 +3,24 @@ footer {
     width: auto;
     .divTest {
         width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
+        @extend %flex;
         .footerCarta {
             h4 {
                 text-align: center;
-                font-family: 'Kaushan Script', cursive;
+                font-family: nth($fuente, 1);
                 font-size: 25px;
-                color: $color4;
+                color:rgba(88, 45, 207, 0.966) ;
                 margin: 50px 0px 5px 0px;
             }
         }
         .navRedes {
             .redes-cont {
     width: auto;
-    display: flex;
-    flex-direction: row;
+    @include flex (flex, none, none, row);
     margin: 10px 0px 30px 0px;
                 div {
                     a {
-                        color: $color4;
+                        color:rgba(88, 45, 207, 0.966) ;
                         margin: 20px;
                         transition: 0.5s;
                         &:hover {
@@ -38,7 +34,7 @@ footer {
     .copy {
         color: $colorwhite;
         background-color: $colorblack;
-        font-family: 'Reenie Beanie', cursive;
+        font-family: nth($fuente, 3);
         font-size: 20px;
         margin: 0;
         p {

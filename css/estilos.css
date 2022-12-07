@@ -142,18 +142,26 @@
   body main .galeria-titulo p {
     font-size: 15px; } }
 
+footer .divTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 header {
   background-color: #f1ddbfe3;
   position: sticky;
   top: 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   z-index: 12; }
   header nav ul {
     display: flex;
     justify-content: center;
+    align-items: none;
+    flex-direction: none;
     list-style: none;
     padding: 0;
     margin-bottom: 0;
@@ -162,7 +170,7 @@ header {
     padding-inline-start: 0; }
   header nav li {
     margin: 0px 10px 0px 10px;
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script";
     font-size: 25px;
     margin: 0px 20px 0px 20px; }
     header nav li a {
@@ -180,13 +188,15 @@ header {
     padding: 7px;
     margin: 5px;
     display: flex;
-    align-items: center; }
+    justify-content: none;
+    align-items: center;
+    flex-direction: none; }
     header a img {
       width: 65px;
       height: 65px; }
     header a h2 {
       color: #000000c2;
-      font-family: 'Kaushan Script', cursive;
+      font-family: "Kaushan Script";
       font-size: 25px;
       font-weight: bold;
       text-align: center;
@@ -197,16 +207,18 @@ header {
 
 main .mundomandala {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: none; }
   main .mundomandala div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 50%;
     background-color: #fac26fe5; }
     main .mundomandala div h1 {
-      font-family: 'Kaushan Script', cursive;
+      font-family: "Kaushan Script";
       color: rgba(88, 45, 207, 0.966);
       font-size: 85px;
       font-weight: bolder;
@@ -214,7 +226,7 @@ main .mundomandala {
       margin-block-start: 0;
       margin-block-end: 0; }
     main .mundomandala div p {
-      font-family: 'Shalimar', cursive;
+      font-family: "Shalimar";
       font-size: 50px;
       font-weight: bolder;
       color: rgba(88, 45, 207, 0.966);
@@ -226,7 +238,7 @@ main .mundomandala {
     height: 323px; }
 
 main .h2Titulo h2 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script";
   color: #f1ddbf;
   background-color: #e79110e5;
   font-size: 60px;
@@ -243,9 +255,10 @@ main .presentacion {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row; }
     main .presentacion #parrafos .parrafo1 {
-      font-family: 'Reenie Beanie', cursive;
+      font-family: "Shalimar";
       font-size: 40px;
       font-weight: bold;
       color: #ffe7c4;
@@ -257,6 +270,8 @@ main .presentacion {
       main .presentacion #parrafos .parrafo1 a {
         display: flex;
         justify-content: center;
+        align-items: none;
+        flex-direction: none;
         color: #ffe7c4;
         background-color: #000000c2;
         border-radius: 50px;
@@ -267,7 +282,7 @@ main .presentacion {
           color: #e79110e5;
           transform: scale(1.05); }
     main .presentacion #parrafos .parrafo2 {
-      font-family: 'Reenie Beanie', cursive;
+      font-family: "Shalimar";
       font-size: 40px;
       font-weight: bold;
       color: #ffe7c4;
@@ -279,6 +294,8 @@ main .presentacion {
       main .presentacion #parrafos .parrafo2 a {
         display: flex;
         justify-content: center;
+        align-items: none;
+        flex-direction: none;
         color: #ffe7c4;
         background-color: #000000c2;
         border-radius: 50px;
@@ -294,17 +311,18 @@ main .carrusel-section {
   main .carrusel-section .carrusel {
     padding: 10px;
     margin: auto;
-    height: 400px;
+    height: 500px;
     width: 390px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     main .carrusel-section .carrusel .carrusel-item {
       width: 400px;
       height: 390px; }
 
 main .galeria-titulo div h2 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script";
   color: #ffe7c4;
   background-color: #e79110e5;
   font-size: 50px;
@@ -312,7 +330,7 @@ main .galeria-titulo div h2 {
 
 main .galeria-titulo p {
   font-size: 50px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script";
   color: #ffe7c4;
   background-color: #e79110e5;
   font-size: 50px;
@@ -331,7 +349,7 @@ main .grid-contenido {
     border-color: rgba(54, 10, 83, 0.76);
     border-width: 5px;
     height: 310px;
-    transition: 2s ease-in-out;
+    transition-duration: 2s;
     z-index: 10; }
     main .grid-contenido div:hover {
       transform: scale(1.05);
@@ -347,7 +365,7 @@ main .grid-contenido {
 main section .accordion .accordion-item {
   background-color: rgba(88, 45, 207, 0.842); }
   main section .accordion .accordion-item .accordion-button {
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script";
     color: rgba(88, 45, 207, 0.842);
     font-size: 30px;
     background-color: #fac26fe5;
@@ -357,7 +375,7 @@ main section .accordion .accordion-item {
       background-color: #e79110e5;
       box-shadow: none; }
   main section .accordion .accordion-item .accordion-body {
-    font-family: 'Shalimar', cursive;
+    font-family: "Shalimar";
     font-size: 40px;
     color: #ffe7c4; }
 
@@ -365,20 +383,18 @@ footer {
   background-color: #fac26fe5;
   width: auto; }
   footer .divTest {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    width: auto; }
     footer .divTest .footerCarta h4 {
       text-align: center;
-      font-family: 'Kaushan Script', cursive;
+      font-family: "Kaushan Script";
       font-size: 25px;
       color: rgba(88, 45, 207, 0.966);
       margin: 50px 0px 5px 0px; }
     footer .divTest .navRedes .redes-cont {
       width: auto;
       display: flex;
+      justify-content: none;
+      align-items: none;
       flex-direction: row;
       margin: 10px 0px 30px 0px; }
       footer .divTest .navRedes .redes-cont div a {
@@ -390,7 +406,7 @@ footer {
   footer .copy {
     color: white;
     background-color: black;
-    font-family: 'Reenie Beanie', cursive;
+    font-family: "Shalimar";
     font-size: 20px;
     margin: 0; }
     footer .copy p {
