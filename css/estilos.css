@@ -316,7 +316,7 @@ main .carrusel-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: none; }
     main .carrusel-section .carrusel .carrusel-item {
       width: 400px;
       height: 390px; }
