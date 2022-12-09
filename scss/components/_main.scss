@@ -124,6 +124,7 @@ main {
             background-color: $color3;
             font-size: 50px;
             text-align: center; 
+            margin-bottom: 0;
         }
     }
     p {
@@ -133,8 +134,53 @@ main {
         background-color: $color3;
         font-size: 50px;
         text-align: center; 
+        margin-bottom: 0;
     }
 }
+
+.cartaPresentacion {
+    @include flex (flex,space-between,center,row);
+    padding: 20px;
+    background-color: rgba(54, 10, 83, 0.76);
+    width: auto;
+    height: auto;
+}
+
+.cartaPresentacion .cartaTexto {
+    margin: 10px;
+    background-color: #e79110b4;
+    border-radius: 15px;
+}
+
+.cartaPresentacion img {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: $color3;
+    height: 500px;
+    width: 500px;
+}
+
+.cartaPresentacion .cartaTexto h2 {
+    font-family: 'Shalimar', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 5px;
+    color: $color2;
+}
+
+.cartaPresentacion .cartaTexto article {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Shalimar', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+    color: $color2;
+}
+
+
+
 
     .grid-contenido {
         width: map-get($grid-maps, ancho);
