@@ -39,6 +39,16 @@ main {
             margin: 0;
         }
     }
+    .h2Titulo {
+        h2 {
+            font-family: nth($fuente, 1);
+            color: #f1ddbf;
+            background-color: $color3;
+            font-size: 60px;
+            text-align: center; 
+            margin: 0;
+        }
+    }
     .presentacion {
         height: calc(100vh - 97px);
         background-image: url(../assets/img/mandalas/section2.webp);
